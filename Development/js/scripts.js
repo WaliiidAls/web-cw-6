@@ -15,8 +15,28 @@ function hottestDays(alltemp) {
 }
 //
 // assume we will use forEach
+let liberay = [
+  {
+    bookId: 3,
+    books: "d a r k",
+  },
+  {
+    bookId: 7,
+    books: "l u c i",
+  },
+  {
+    bookId: 5,
+    books: "h a r r y",
+  },
+];
+getBookById(7, liberay);
+
 function getBookById(bookId, books) {
-  return books.includes(bookId);
+  for (b of books) {
+    if (b.bookId == bookId) {
+      console.log(b);
+    }
+  }
 }
 //
 //
